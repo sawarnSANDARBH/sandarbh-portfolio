@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio Website</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/6e750182a1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <h1 class="logo"><span>S</span>ANDARBH</h1>
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Web Dev/Power BI Dev</p>
+        <h1>Hi, I'm <span> SANDARBH</span><br> From India </h1>
+      </div>
+    </div>
+  </div>
+
+  <!--  ----------about---------------  --> 
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/user.jpg">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>My Name is Sandarbh , I am Graduated from Greater Noida Institute of Technology  in 2023 june , I have done Btech in Information Technology, i am profficient in Web Developement ,learnt Technologies like React Js ,Tailwind Css, Bootstrap , Java Script,HTML,Css  </p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links"  onclick="opentab('experience')">Experience</p>
+            <p class="tab-links"  onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Web Dev</span><br> Designing Web/ Interfaces</li>
+              <li><span>Power BI Dev</span><br> Designing Dashboard Report/ Business Strategy</li>
+              <li><span>Python/Pandas</span><br> Reading csv files / Dealing with null data set</li>
+              <li><span>Java</span></li>
+              <li> <span>Html,Css,ReactJS</span></li>
+              <li><span>Tailwind Css,Bootstrap</span></li>
+            </ul>
+          </div>
+          <div class="tab-contents " id="experience">
+            <ul>
+              <li><span>Web Dev</span><br> Designing Web/ Interfaces</li>
+              <li><span>Power BI Dev</span><br> Designing Dashboard Report/ Business Strategy</li>
+              <li><span>Python/Pandas</span><br> Reading csv files / Dealing with null data set</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2020-2023</span><br> BTech in Information Technology From Greater Noida Institute Of Technology </li>
+              <li><span>2017-2020</span><br> Diploma in Computer Science From Delhi Institute of Tech Management and Research Faridabad</li>
+              <li><span>2017</span><br> High school education from CBSE/Dolphin Public School</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--   ----------services--------------------   -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Design</h2>
+          <p>Responsive Design: Ensure the project is 95% fully responsive, allowing users to view and interact
+            with it seamlessly across various devices (90%), including desktops, tablets, and mobile phones.
+            Highlight your proficiency in creating layouts that adapt to different screen sizes using media
+            queries and responsive design principles</p>
+          <a href="">Learn more</a>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-business-time"></i>
+          <h2>Interactive Dashboard using/Power BI</h2>
+          <p>Analyzed and visualized 100% sales data from an e-commerce platform using Power BI to derive
+            actionable insights and optimize business strategies.
+            • Technologies : Leveraged Power BI for data visualization and analysis, integrating various data
+            sources including sales databases, customer data, and product information to convert the output
+            </p>
+          <a href="">Learn more</a>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-code-branch"></i>
+          <h2>Web Developement</h2>
+          <p>Main components are Design and features initiated 70% React and 30 % TailwindCss and Html .
+            • This portfolio is meant to showcasing self skills to recruiter,made to be very easy-to-use,
+            quick and efficient for 90% users</p>
+          <a href="">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--   ------portfolio--------------               -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/work-1.png" >
+          <div class="layer">
+            <h3>Personal Portfolio</h3>
+            <p>• Developed a Portfolio using React JS as a frontend which have basic functions of showcasing
+              self objective with efficiency 90%</p>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="images/work-2.png" >
+          <div class="layer">
+            <h3>Food Delievery Web</h3>
+            <p>Created the Restaurant app using Tailwind css and Reactjs with interactive design and Login inteface with different Facility we provide</p>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="images/work-3.png" >
+          <div class="layer">
+            <h3>Interior Design Web</h3>
+            <p>The objective of this project is to maximizing output for the company by providing best
+              services and after sales services to the 99% customers</p>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+
+  <!-- --------contact----------  -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-envelope"></i>sawarn.sandarbh2309@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> 8340303906</p>
+          <div class="social-icons">
+            <a href="wa.ue/918340303906"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href="http://www.linkedin.com/in/sandarbh-a35650253"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <a href="images/sandarbh.resume.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right"></div>
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder=" Your Name" required>
+          <input type="email" name="Email" placeholder=" Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn-2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+    <div class="copyright">
+      <p> Copyright  © sawarn SANDARBH. <i class="fa-solid fa-heart"></i> </p>
+    </div>
+  </div>
+  <script>
+
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+ 
+  function opentab(tabname){
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+       document.getElementById(tabname).classList.add("active-tab")
+  }
+  </script>
+
+  <script>
+
+    var sidemenu =document.getElementById("sidemenu")
+
+    function openmenu(){
+      sidemenu.style.right ="0"
+    }
+
+    function closemenu(){
+      sidemenu.style.right ="-200px"
+    }
+
+  </script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzUtIXzT7ehzvviRbtJd6TphnxabDCNYCs32Z0pzM6K80jNzEMbl6cihGGNcnm7ODU/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg=document.getElementById("msg")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML ="Message sent successfully" 
+        setTimeout(function(){
+               msg.innerHTML = ""
+      },5000)
+      form.reset()
+    })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
